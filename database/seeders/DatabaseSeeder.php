@@ -1,11 +1,14 @@
 <?php
 
 namespace Database\Seeders;
+<<<<<<< HEAD
 use App\Models\Skema;
 use App\Models\Asesor;
 use App\Models\UnitKompetensi;
 use App\Models\Elemen;
 use App\Models\Jadwal;
+=======
+>>>>>>> 366552e766ca2a3f6840ad684260d207841d2208
 
 use Illuminate\Database\Seeder;
 
@@ -19,6 +22,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+<<<<<<< HEAD
         $this->call([
             AsesorSeeder::class,
             ElemenSeeder::class,
@@ -29,5 +33,7 @@ class DatabaseSeeder extends Seeder
            
            
         ]);
+=======
+>>>>>>> 366552e766ca2a3f6840ad684260d207841d2208
     }
 }

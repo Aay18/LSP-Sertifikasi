@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AsesorController;
@@ -8,6 +9,9 @@ use App\Http\Controllers\JadwalController;
 use App\Http\Controllers\KriteriaUnjukKerjaController;
 use App\Http\Controllers\SkemaController;
 use App\Http\Controllers\UnitKompetensiController;
+=======
+use Illuminate\Support\Facades\Route;
+>>>>>>> 366552e766ca2a3f6840ad684260d207841d2208
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +24,7 @@ use App\Http\Controllers\UnitKompetensiController;
 |
 */
 
+<<<<<<< HEAD
 //Belajar
 // Route::get('belajar', function () {
 // 	return view('belajar');
@@ -104,3 +109,21 @@ Route::post('/unitkompetensi/store', [UnitKompetensiController::class,'store'])-
 Route::get('/unitkompetensi/edit/{id?}', [UnitKompetensiController::class,'edit'])->name('unitkompetensi.edit');
 Route::put('/unitkompetensi/update/{id?}', [UnitKompetensiController::class,'update'])->name('unitkompetensi.update');
 Route::delete('/unitkompetensi/destroy/{id?}', [UnitKompetensiController::class,'destroy'])->name('unitkompetensi.destroy');
+=======
+Route::get('/', function () {
+    return view('Mentor');
+});
+
+Route::get('beranda', function () {
+    return view('home.layout.beranda');
+});
+
+Route::get('skema_sertifikasi', function () {
+    return view('home.layout.skema_sertifikasi');
+});
+
+Route::get('profil', function () {
+    return view('home.layout.profil');
+});
+
+>>>>>>> 366552e766ca2a3f6840ad684260d207841d2208
